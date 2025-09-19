@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_988a4152c51022f9b1d9e5f455901312 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_988a4152c51022f9b1d9e5f455901312" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_988a4152c51022f9b1d9e5f455901312 = L.map(
+                "map_988a4152c51022f9b1d9e5f455901312",
+                {
+                    center: [-9.19, -75.015],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_43d95b710c4f7c0ae7df35b7d179883f = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_43d95b710c4f7c0ae7df35b7d179883f.addTo(map_988a4152c51022f9b1d9e5f455901312);
+        
+    
+            var circle_a4d9d91d5fee4032bb45ca2eef21474a = L.circle(
+                [-10.443748046999925, -76.88965820299995],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_988a4152c51022f9b1d9e5f455901312);
+        
+    
+        var popup_5d6299da87be75c5161fa4fc33af7d1f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9f0940db342e134641b0a326a5d7aa0 = $(`<div id="html_b9f0940db342e134641b0a326a5d7aa0" style="width: 100.0%; height: 100.0%;">YANAPAMPA: 0 hospitals within 10 km</div>`)[0];
+                popup_5d6299da87be75c5161fa4fc33af7d1f.setContent(html_b9f0940db342e134641b0a326a5d7aa0);
+            
+        
+
+        circle_a4d9d91d5fee4032bb45ca2eef21474a.bindPopup(popup_5d6299da87be75c5161fa4fc33af7d1f)
+        ;
+
+        
+    
+    
+            circle_a4d9d91d5fee4032bb45ca2eef21474a.bindTooltip(
+                `<div>
+                     YANAPAMPA (Isolated, 0 hospitals)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_67b9872ccb2cbce6c6946fa582dc0031 = L.circle(
+                [-12.030380854999972, -77.04701948699994],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_988a4152c51022f9b1d9e5f455901312);
+        
+    
+        var popup_d108306592da1e8bbf40002af69fc63c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_252e45e2ab9aa4d9a2c61ff2823799be = $(`<div id="html_252e45e2ab9aa4d9a2c61ff2823799be" style="width: 100.0%; height: 100.0%;">BARRIO OBRERO INDUSTRIAL: 265 hospitals within 10 km</div>`)[0];
+                popup_d108306592da1e8bbf40002af69fc63c.setContent(html_252e45e2ab9aa4d9a2c61ff2823799be);
+            
+        
+
+        circle_67b9872ccb2cbce6c6946fa582dc0031.bindPopup(popup_d108306592da1e8bbf40002af69fc63c)
+        ;
+
+        
+    
+    
+            circle_67b9872ccb2cbce6c6946fa582dc0031.bindTooltip(
+                `<div>
+                     BARRIO OBRERO INDUSTRIAL (Concentrated, 265 hospitals)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_5b570c8d59099cf1ad70c921e769c453 = L.circle(
+                [-8.072162108999988, -75.61701757899993],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_988a4152c51022f9b1d9e5f455901312);
+        
+    
+        var popup_d139a9e9f4473b37c15275a4f3f78766 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_798e6d2319903112ee8686f507d83d6e = $(`<div id="html_798e6d2319903112ee8686f507d83d6e" style="width: 100.0%; height: 100.0%;">PUEBLO NUEVO: 0 hospitals within 10 km</div>`)[0];
+                popup_d139a9e9f4473b37c15275a4f3f78766.setContent(html_798e6d2319903112ee8686f507d83d6e);
+            
+        
+
+        circle_5b570c8d59099cf1ad70c921e769c453.bindPopup(popup_d139a9e9f4473b37c15275a4f3f78766)
+        ;
+
+        
+    
+    
+            circle_5b570c8d59099cf1ad70c921e769c453.bindTooltip(
+                `<div>
+                     PUEBLO NUEVO (Isolated, 0 hospitals)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_9b0565484daec59e39efd112fb73ad08 = L.circle(
+                [-3.7823183599999792, -73.28707812499994],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_988a4152c51022f9b1d9e5f455901312);
+        
+    
+        var popup_745297fabe304e7dc4ec057932340c5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eafbc0a302123c400412ff61f936ae35 = $(`<div id="html_eafbc0a302123c400412ff61f936ae35" style="width: 100.0%; height: 100.0%;">TRES DE OCTUBRE: 29 hospitals within 10 km</div>`)[0];
+                popup_745297fabe304e7dc4ec057932340c5b.setContent(html_eafbc0a302123c400412ff61f936ae35);
+            
+        
+
+        circle_9b0565484daec59e39efd112fb73ad08.bindPopup(popup_745297fabe304e7dc4ec057932340c5b)
+        ;
+
+        
+    
+    
+            circle_9b0565484daec59e39efd112fb73ad08.bindTooltip(
+                `<div>
+                     TRES DE OCTUBRE (Concentrated, 29 hospitals)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_43d95b710c4f7c0ae7df35b7d179883f.addTo(map_988a4152c51022f9b1d9e5f455901312);
+        
+</script>
+</html>
